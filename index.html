@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My App - Deep Link Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .link-card { 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            margin: 10px 0; 
+            border-radius: 5px; 
+        }
+        a { 
+            display: inline-block; 
+            padding: 10px 20px; 
+            background: #007bff; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>My App Deep Link Test</h1>
+    <p>Click these links to test deep linking:</p>
+    
+    <div class="link-card">
+        <h3>Profile Page</h3>
+        <a href="myapp://profile?userId=123">Open Profile in App</a>
+        <p>Custom scheme: <code>myapp://profile?userId=123</code></p>
+    </div>
+    
+    <div class="link-card">
+        <h3>Product Page</h3>
+        <a href="myapp://product?id=456&category=electronics">Open Product in App</a>
+        <p>Custom scheme: <code>myapp://product?id=456&category=electronics</code></p>
+    </div>
+    
+    <div class="link-card">
+        <h3>Settings Page</h3>
+        <a href="myapp://settings">Open Settings in App</a>
+        <p>Custom scheme: <code>myapp://settings</code></p>
+    </div>
+    
+    <div class="link-card">
+        <h3>User Profile (Path Parameter)</h3>
+        <a href="myapp://user/789">Open User 789 in App</a>
+        <p>Custom scheme: <code>myapp://user/789</code></p>
+    </div>
+    
+    <hr>
+    <p><strong>Instructions:</strong></p>
+    <ol>
+        <li>Install the app on your device</li>
+        <li>Open this page in your mobile browser</li>
+        <li>Tap any link above</li>
+        <li>Choose "Open with My App" when prompted</li>
+    </ol>
+</body>
+</html>
