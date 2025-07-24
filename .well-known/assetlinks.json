@@ -1,1 +1,9 @@
-
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.interview",
+    "sha256_cert_fingerprints":
+    ["9E:17:8A:B0:2A:E6:D5:7B:FE:86:0D:40:9A:94:6D:42:74:32:D6:1D:63:95:01:D7:8F:9F:2C:F8:AE:A0:39:73"]
+  }
+}]
