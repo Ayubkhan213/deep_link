@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Open My App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Open Interview App</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -26,16 +26,17 @@
 </head>
 <body>
 
-  <h2>Welcome!</h2>
+  <h2>Open Interview App</h2>
   <p>Click the button below to open the app:</p>
 
-  <button onclick="openApp()">Open My App</button>
+  <button onclick="openApp()">Open App</button>
 
   <script>
     function openApp() {
-      window.location.href = "intent://open#Intent;scheme=https;package=com.example.deeplink_cookbook;end";
+      window.location.href = "intent://open#Intent;scheme=https;package=com.example.interview;end";
     }
   </script>
 
 </body>
 </html>
+
