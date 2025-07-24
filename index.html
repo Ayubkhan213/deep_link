@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My App - Deep Link Test</title>
+    <title>My App - Open App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body { font-family: Arial, sans-serif; padding: 20px; }
@@ -14,7 +14,7 @@
         a { 
             display: inline-block; 
             padding: 10px 20px; 
-            background: #007bff; 
+            background: #28a745; 
             color: white; 
             text-decoration: none; 
             border-radius: 5px; 
@@ -23,40 +23,24 @@
     </style>
 </head>
 <body>
-    <h1>My App Deep Link Test</h1>
-    <p>Click these links to test deep linking:</p>
+    <h1>Open My App</h1>
+    <p>Click the button below to open the app:</p>
     
     <div class="link-card">
-        <h3>Profile Page</h3>
-        <a href="https://myaks.netlify.app/profile?userId=123">Open Profile in App</a>
-        <p>HTTPS link: <code>https://myaks.netlify.app/profile?userId=123</code></p>
+        <a href="https://myaks.netlify.app/">Open App</a>
+        <p>This will open your app if installed.</p>
     </div>
-    
-    <div class="link-card">
-        <h3>Product Page</h3>
-        <a href="https://myaks.netlify.app/product?id=456&category=electronics">Open Product in App</a>
-        <p>HTTPS link: <code>https://myaks.netlify.app/product?id=456&category=electronics</code></p>
-    </div>
-    
-    <div class="link-card">
-        <h3>Settings Page</h3>
-        <a href="https://myaks.netlify.app/settings">Open Settings in App</a>
-        <p>HTTPS link: <code>https://myaks.netlify.app/settings</code></p>
-    </div>
-    
-    <div class="link-card">
-        <h3>User Profile (Path Parameter)</h3>
-        <a href="https://myaks.netlify.app/user/789">Open User 789 in App</a>
-        <p>HTTPS link: <code>https://myaks.netlify.app/user/789</code></p>
-    </div>
-    
+
     <hr>
     <p><strong>Instructions:</strong></p>
     <ol>
-        <li>Install the app on your device</li>
+        <li>Install the app on your phone</li>
+        <li>Make sure <code>assetlinks.json</code> is hosted at <br>
+            <code>https://myaks.netlify.app/.well-known/assetlinks.json</code>
+        </li>
         <li>Open this page in your mobile browser</li>
-        <li>Tap any link above</li>
-        <li>If App Links are configured correctly, the app will open</li>
+        <li>Tap the button above</li>
+        <li>Your app should open via deep link</li>
     </ol>
 </body>
 </html>
