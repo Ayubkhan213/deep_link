@@ -1,42 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Open Interview App</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      text-align: center;
-    }
-    button {
-      font-size: 18px;
-      padding: 12px 24px;
-      background-color: #1976D2;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #1565C0;
-    }
-  </style>
-</head>
-<body>
+<html>
+  <head>
+    <title>Open My App</title>
+  </head>
+  <body>
+    <h1>Open My App from Web</h1>
+    
+    <!-- This is a regular App Link -->
+    <a href="https://myaks.netlify.app/open" style="font-size: 20px;">Open My App</a>
 
-  <h2>Open Interview App</h2>
-  <p>Click the button below to open the app:</p>
-
-  <button onclick="openApp()">Open App</button>
-
-  <script>
-    function openApp() {
-      window.location.href = "intent://open#Intent;scheme=https;package=com.example.interview;end";
-    }
-  </script>
-
-</body>
+    <!-- OR fallback: Using intent: scheme (works without assetlinks.json) -->
+    <br><br>
+    <a href="intent://open#Intent;scheme=myapp;package=com.example.interview;end" style="font-size: 20px;">Open via intent://</a>
+  </body>
 </html>
-
