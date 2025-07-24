@@ -1,46 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My App - Open App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        .link-card { 
-            border: 1px solid #ddd; 
-            padding: 15px; 
-            margin: 10px 0; 
-            border-radius: 5px; 
-        }
-        a { 
-            display: inline-block; 
-            padding: 10px 20px; 
-            background: #28a745; 
-            color: white; 
-            text-decoration: none; 
-            border-radius: 5px; 
-            margin: 5px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open My App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+    }
+    button {
+      font-size: 18px;
+      padding: 12px 24px;
+      background-color: #1976D2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1565C0;
+    }
+  </style>
 </head>
 <body>
-    <h1>Open My App</h1>
-    <p>Click the button below to open the app:</p>
-    
-    <div class="link-card">
-        <a href="https://myaks.netlify.app">Open App</a>
-        <p>This will open your app if installed.</p>
-    </div>
 
-    <hr>
-    <p><strong>Instructions:</strong></p>
-    <ol>
-        <li>Install the app on your phone</li>
-        <li>Make sure <code>assetlinks.json</code> is hosted at <br>
-            <code>https://myaks.netlify.app/.well-known/assetlinks.json</code>
-        </li>
-        <li>Open this page in your mobile browser</li>
-        <li>Tap the button above</li>
-        <li>Your app should open via deep link</li>
-    </ol>
+  <h2>Welcome!</h2>
+  <p>Click the button below to open the app:</p>
+
+  <button onclick="openApp()">Open My App</button>
+
+  <script>
+    function openApp() {
+      window.location.href = "intent://open#Intent;scheme=https;package=com.example.deeplink_cookbook;end";
+    }
+  </script>
+
 </body>
 </html>
