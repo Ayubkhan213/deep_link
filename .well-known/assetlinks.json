@@ -6,4 +6,12 @@
     "sha256_cert_fingerprints":
     ["9E:17:8A:B0:2A:E6:D5:7B:FE:86:0D:40:9A:94:6D:42:74:32:D6:1D:63:95:01:D7:8F:9F:2C:F8:AE:A0:39:73"]
   }
-}]
+}
+{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.shap_decoration",
+    "sha256_cert_fingerprints":
+    ["71:A8:8E:99:F4:E9:71:99:F5:7E:3D:94:74:66:AC:50:62:85:6F:59:C7:09:CE:B3:13:71:03:49:F8:DA:0A:AE"]
+  }]
